@@ -3,9 +3,67 @@ import "./styles.css";
 
 export default function App() {
   return (
-    <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
+    <div className="frame">
+      <section className="header">
+        <button className="btn">Add</button>
+        <h1 className="header-title">Todo Lists</h1>
+        <button className="btn main-red-color">Clear</button>
+      </section>
+
+      <section className="form-add-todo">
+        <form className="add-form">
+          <input type="text" className="add-input" />
+          <button className="btn">Add</button>
+        </form>
+      </section>
+
+      <section className="todos">
+        <div className="todo">
+          <span className="todo-text">Learning React</span>
+        </div>
+        <div className="todo">
+          <span className="todo-text">Learning React</span>
+        </div>
+        <div className="todo">
+          <span className="todo-text">Learning React</span>
+        </div>
+        <div className="todo">
+          <span className="todo-text">Learning React</span>
+        </div>
+        <div className="todo">
+          <span className="todo-text">Learning React</span>
+        </div>
+        <div className="todo">
+          <span className="todo-text">Learning React</span>
+        </div>
+        <div className="todo">
+          <span className="todo-text">Learning React</span>
+        </div>
+        <div className="todo">
+          <span className="todo-text">Learning React</span>
+        </div>
+        <div className="todo">
+          <span className="todo-text">Learning React</span>
+        </div>
+        <div className="todo">
+          <span className="todo-text">Learning React</span>
+        </div>
+        <div className="todo">
+          <span className="todo-text">Learning React</span>
+        </div>
+        <div className="todo">
+          <span className="todo-text">Learning React</span>
+        </div>
+        <div className="todo">
+          <span className="todo-text">Learning React</span>
+        </div>
+        <div className="todo">
+          <span className="todo-text">Learning React</span>
+        </div>
+        <div className="todo">
+          <span className="todo-text">Learning React</span>
+        </div>
+      </section>
     </div>
   );
 }
