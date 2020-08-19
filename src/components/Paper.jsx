@@ -5,7 +5,7 @@ const Paper = ({ children }) => {
   return <div className="frame">{children}</div>;
 };
 
-Paper.prototype = {
+Paper.propTypes = {
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node

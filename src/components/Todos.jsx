@@ -1,53 +1,20 @@
 import React from "react";
+import Todo from "./Todo";
 
 const Todos = () => {
+  const todos = [
+    { title: "Belajar HTML" },
+    { title: "Belajar CSS" },
+    { title: "Belajar JS" },
+    { title: "Belajar React" },
+    { title: "Belajar Vue" }
+  ];
+
   return (
     <section className="todos">
-      <div className="todo">
-        <span className="todo-text">Learning React</span>
-      </div>
-      <div className="todo">
-        <span className="todo-text">Learning React</span>
-      </div>
-      <div className="todo">
-        <span className="todo-text">Learning React</span>
-      </div>
-      <div className="todo">
-        <span className="todo-text">Learning React</span>
-      </div>
-      <div className="todo">
-        <span className="todo-text">Learning React</span>
-      </div>
-      <div className="todo">
-        <span className="todo-text">Learning React</span>
-      </div>
-      <div className="todo">
-        <span className="todo-text">Learning React</span>
-      </div>
-      <div className="todo">
-        <span className="todo-text">Learning React</span>
-      </div>
-      <div className="todo">
-        <span className="todo-text">Learning React</span>
-      </div>
-      <div className="todo">
-        <span className="todo-text">Learning React</span>
-      </div>
-      <div className="todo">
-        <span className="todo-text">Learning React</span>
-      </div>
-      <div className="todo">
-        <span className="todo-text">Learning React</span>
-      </div>
-      <div className="todo">
-        <span className="todo-text">Learning React</span>
-      </div>
-      <div className="todo">
-        <span className="todo-text">Learning React</span>
-      </div>
-      <div className="todo">
-        <span className="todo-text">Learning React</span>
-      </div>
+      {todos.map((todo) => (
+        <Todo text={todo.title} />
+      ))}
     </section>
   );
 };
