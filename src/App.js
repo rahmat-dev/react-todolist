@@ -1,9 +1,10 @@
 import React from "react";
 import "./styles.css";
+import Paper from "./components/Paper";
 
 export default function App() {
   return (
-    <div className="frame">
+    <Paper>
       <section className="header">
         <button className="btn">Add</button>
         <h1 className="header-title">Todo Lists</h1>
@@ -64,6 +65,6 @@ export default function App() {
           <span className="todo-text">Learning React</span>
         </div>
       </section>
-    </div>
+    </Paper>
   );
 }
