@@ -6,6 +6,7 @@
   --main-red-color: #e06262;
   --main-black-color: #484848;
   --homemade-apple-font: "Homemade Apple", cursive;
+  --bungee-font: "Bungee", cursive;
 }
 
 html {
@@ -52,7 +53,7 @@ body {
 
 .btn {
   font-size: 1.8rem;
-  font-family: "Bungee", cursive;
+  font-family: var(--bungee-font);
   background: none;
   border: none;
   outline: none;
@@ -115,6 +116,15 @@ section.todos::-webkit-scrollbar {
   font: 2.4rem var(--homemade-apple-font);
   text-transform: lowercase;
   text-align: center;
+}
+
+.nothing-todo-placeholder {
+  font: 1.8rem var(--homemade-apple-font);
+  text-align: center;
+}
+
+.nothing-todo-placeholder b {
+  font-family: var(--bungee-font);
 }
 /* END SECTION TODO */
 

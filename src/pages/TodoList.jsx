@@ -6,11 +6,7 @@ import TodoForm from "../components/TodoForm";
 import Todos from "../components/Todos";
 
 const TodoList = () => {
-  const [todos, setTodos] = useState([
-    { title: "Belajar HTML", isCompleted: false },
-    { title: "Belajar CSS", isCompleted: false },
-    { title: "Belajar JS", isCompleted: false }
-  ]);
+  const [todos, setTodos] = useState([]);
 
   const [showTodoForm, setShowTodoForm] = useState(false);
 
@@ -29,9 +25,17 @@ const TodoList = () => {
     setShowTodoForm(!showTodoForm);
   };
 
+  const clearTodo = () => {
+    setTodos([]);
+  };
+
   return (
     <Paper>
-      <Header toggleShowTodoForm={toggleShowTodoForm} />
+      <Header
+        toggleShowTodoForm={toggleShowTodoForm}
+        showTodoForm={showTodoForm}
+        clearTodo={clearTodo}
+      />
       <TodoForm addTodo={addTodo} showTodoForm={showTodoForm} />
       <Todos todos={todos} setCompleteTodo={setCompleteTodo} />
     </Paper>
