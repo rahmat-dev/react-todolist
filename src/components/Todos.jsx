@@ -5,17 +5,19 @@ import Todo from "./Todo";
 const Todos = ({ todos }) => {
   return (
     <section className="todos">
-      {todos.map((todo) => (
-        <Todo text={todo.title} />
+      {todos.map((todo, index) => (
+        <Todo text={todo.title} key={index} />
       ))}
     </section>
   );
 };
 
-Todos.propTypes = PropTypes.arrayOf(
-  PropTypes.shape({
-    text: PropTypes.string
-  })
-);
+Todos.propTypes = {
+  todos: PropTypes.arrayOf(
+    PropTypes.shape({
+      text: PropTypes.string
+    })
+  )
+};
 
 export default Todos;

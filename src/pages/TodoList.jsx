@@ -14,10 +14,14 @@ const TodoList = () => {
     { title: "Belajar Vue" }
   ]);
 
+  const addTodo = (value) => {
+    setTodos([...todos, { title: value }]);
+  };
+
   return (
     <Paper>
       <Header />
-      <TodoForm />
+      <TodoForm addTodo={addTodo} />
       <Todos todos={todos} />
     </Paper>
   );
