@@ -14,14 +14,20 @@ const TodoList = () => {
     { title: "Belajar Vue" }
   ]);
 
+  const [showTodoForm, setShowTodoForm] = useState(false);
+
   const addTodo = (value) => {
     setTodos([...todos, { title: value }]);
   };
 
+  const toggleShowTodoForm = () => {
+    setShowTodoForm(!showTodoForm);
+  };
+
   return (
     <Paper>
-      <Header />
-      <TodoForm addTodo={addTodo} />
+      <Header toggleShowTodoForm={toggleShowTodoForm} />
+      <TodoForm addTodo={addTodo} showTodoForm={showTodoForm} />
       <Todos todos={todos} />
     </Paper>
   );

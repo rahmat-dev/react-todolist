@@ -44,7 +44,7 @@ body {
 .frame {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   border: 1px solid var(--main-black-color);
   height: 100%;
   padding: 16px 16px 0px;
