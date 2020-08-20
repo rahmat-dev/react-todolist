@@ -9,7 +9,7 @@ const Header = ({ toggleShowTodoForm, showTodoForm, clearTodo }) => {
         text={showTodoForm ? "Done" : "Add"}
         onClick={toggleShowTodoForm}
       />
-      <h1 className="header-title">Todo Lists</h1>
+      {/* <h1 className="header-title">Todo Lists</h1> */}
       <Button text="Clear" onClick={clearTodo} color="main-red-color" />
     </section>
   );
