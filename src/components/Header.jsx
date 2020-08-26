@@ -10,7 +10,9 @@ const Header = ({ toggleShowTodoForm, showTodoForm, clearTodo }) => {
         onClick={toggleShowTodoForm}
       />
       {/* <h1 className="header-title">Todo Lists</h1> */}
-      <Button text="Clear" onClick={clearTodo} color="main-red-color" />
+      {!showTodoForm && (
+        <Button text="Clear" onClick={clearTodo} color="main-red-color" />
+      )}
     </section>
   );
 };

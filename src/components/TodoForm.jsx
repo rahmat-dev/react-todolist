@@ -7,7 +7,7 @@ const TodoForm = ({ addTodo, showTodoForm }) => {
   const handleFormSubmit = (e) => {
     e.preventDefault();
 
-    if (!value) {
+    if (!value.trim()) {
       alert("No blank todo!");
       return;
     }
@@ -23,6 +23,7 @@ const TodoForm = ({ addTodo, showTodoForm }) => {
           <input
             type="text"
             className="add-input"
+            maxLength={20}
             value={value}
             onChange={(e) => setValue(e.target.value)}
           />

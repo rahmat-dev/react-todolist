@@ -58,6 +58,7 @@ body {
   border: none;
   outline: none;
   cursor: pointer;
+  padding: 0;
 }
 
 .btn:active {
@@ -83,6 +84,7 @@ section.header {
 .add-form {
   display: flex;
   align-items: flex-start;
+  margin: 8px 0 0;
 }
 
 .add-input {
@@ -95,6 +97,7 @@ section.header {
   text-transform: lowercase;
   text-align: center;
   margin-right: 8px;
+  padding: 8px 0px;
 }
 /* END SECTION FORM ADD TODO */
 
@@ -103,7 +106,6 @@ section.todos {
   display: flex;
   flex-direction: column;
   overflow: auto;
-  margin: 16px 0;
 }
 
 section.todos::-webkit-scrollbar {
@@ -116,6 +118,7 @@ section.todos::-webkit-scrollbar {
   font: 2.4rem var(--homemade-apple-font);
   text-transform: lowercase;
   text-align: center;
+  padding: 8px 0px;
 }
 
 .nothing-todo-placeholder {
